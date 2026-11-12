@@ -1,3 +1,6 @@
+"""Script para abrir una dirección del navegador web pásada por parámetros
+Pensado para abrir Obsidian, utilizándolo como acceso directo"""
+
 import argparse
 import webbrowser
 

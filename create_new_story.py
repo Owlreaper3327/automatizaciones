@@ -7,15 +7,12 @@ import os
 parser = argparse.ArgumentParser()
 parser.add_argument('--stories_folder', type=str, help='stories folder')
 parser.add_argument('--obsidian_folder', type=str, help='vault folder')
-parser.add_argument('--story_name', type=str, help='name of new folder')
 
 args = parser.parse_args()
 stories_folder = args.stories_folder
 obsidian_folder = args.obsidian_folder
-story_name = args.story_name
 
-if not story_name:
-    story_name = input("Enter story name: ")
+story_name = input("Enter story name: ")
 
 story_name = sanitize_filename(story_name)
 
